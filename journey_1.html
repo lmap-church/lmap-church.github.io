@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Christmas Lights Tour—Christmas Journeys Tour 1</title>
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-tour">
+    <header>
+        <img srcset="images/xmas_lights_tour_phone.png 320w,
+                        images/xmas_lights_tour_small.png  480w,
+                        images/xmas_lights_tour_medium.png 768w,
+                        images/xmas_lights_tour_large.png 1080w" sizes="(max-width: 480px) 100vw, 
+                    (min-width: 769px) and (max-width: 899px) 70vw,
+                    (min-width: 900px) 60vw" src="images/xmas_lights_tour_small.png"
+            alt="Great Christmas Lights Tour" />
+    </header>
+
+    <main>
+
+
+        <p>Congratulations! You have started the Lower Mountains Anglican Church Great Christmas Light Tour – this tour
+            is called Christmas Journeys. </p>
+        <p>Play the audio file below to begin.</p>
+
+
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>Type in the code on the tour sign to begin the great Christmas Lights tour!</p>
+        <form method="POST" action="journey_2.html">
+            <label for="html">Code:</label><br />
+            <input type="text" id="code" name="start-code" required pattern="lmap"> <br />
+            <button class="btn">Submit</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <a class="logo" href="https://lmap.org.au">
+            <img src="images/LMAP Logo white.png" alt="Lower Mountains Anglican Parish" />
+        </a>
+    </footer>
+
+    <script>
+        const code = document.getElementById("code");
+
+        code.addEventListener("input", function (event) {
+            if (code.validity.patternMismatch) {
+                code.setCustomValidity("That isn't the code!");
+            } else {
+                code.setCustomValidity("");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
