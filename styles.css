@@ -137,7 +137,7 @@ input[type="text"] {
 
 @media  (min-width: 1000px) {
     p {
-        width:950px;
+        width:800px;
     }
 
     footer .logo {
