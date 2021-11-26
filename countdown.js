@@ -58,7 +58,7 @@ function startTour() {
 function main() {
     // Set the date we're counting down to
     var countDownDate = new Date("Dec 11, 2021 19:00:00").getTime();
-    // var countDownDate = new Date("Nov 23, 2021 14:01:00").getTime();
+    // var countDownDate = new Date("Nov 26, 2021 14:40:00").getTime();
 
     timer("timer", countDownDate, startTour);
 
