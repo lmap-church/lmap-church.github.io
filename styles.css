@@ -29,7 +29,7 @@ html { font-family: 'Inter', sans-serif; }
 :root {
     --bg-green: rgba(49,87,67,1);
     --bg-dark-blue: rgba(2,0,36,1);
-    --pink: #D32658;
+    --pink: rgba(211, 38, 88, 1);
 }
 
 img {
@@ -90,6 +90,16 @@ hr {
     width: 100%;
 }
 
+/* Form Styles */
+
+input:invalid {
+    border: var(--pink) solid 3px;
+  }
+
+input[type="text"] {
+    width: 220px;
+}
+
 /* @media styles */
 @media (max-width: 480px) {
     article{
@@ -99,7 +109,7 @@ hr {
 
 @media  (min-width: 769px) and (max-width: 899px) {
     article{
-        width: 75vw;
+        width: 95vw;
     }
 
     hr {
@@ -109,7 +119,7 @@ hr {
 
 @media (min-width: 800px) {
     article{
-        width: 65vw;
+        width: 75vw;
     }
 
     footer a {
@@ -123,6 +133,10 @@ hr {
 }
 
 @media  (min-width: 1000px) {
+    article{
+        width:1000px;
+    }
+
     footer .logo {
         max-width: 40%;
     }
@@ -201,7 +215,3 @@ hr {
     background-color: gainsboro; 
     color:ghostwhite; 
 }
-
-input:invalid {
-    border: var(--pink) solid 3px;
-  }
